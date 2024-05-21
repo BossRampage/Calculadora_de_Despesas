@@ -86,3 +86,76 @@ div#alinharmain{
     display: flex;
     align-items: stretch;
 }
+
+@media (max-width: 768px) {
+    div.resfinal {
+        width: 30rem;
+        font-size: 20px;
+    }
+
+    input#gasto {
+        font-size: 20px;
+    }
+
+    label.labeldecisao {
+        font-size: 15px;
+    }
+
+    input#btn_calcular {
+        width: 90px;
+        height: 28px;
+        margin-left: 10px;
+    }
+}
+
+/* Media Query para telas menores que 480px (dispositivos móveis) */
+@media (max-width: 480px) {
+    h1{
+        padding-left: 10px;
+        margin-top: 16px;
+    }
+
+    div.resfinal {
+        width: 20rem;
+        font-size: 18px;
+    }
+
+    input#gasto {
+        font-size: 18px;
+    }
+
+    label.labeldecisao {
+        font-size: 14px;
+        margin-top: 11px;
+        padding-bottom: 12px;
+    }
+
+    input.inputdecisao {
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    input#btn_calcular {
+        width: 80px;
+        height: 25px;
+        margin-left: 5px;
+        margin-top: -20px;
+    }
+
+    #alinhar {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    #alinharmain {
+        flex-direction: column;
+    }
+
+    p#igasto, p.final {
+        margin-top: 16px;
+    }
+    p#textofinal {
+        padding-bottom: 10px;
+        margin-top: 16px;
+    }
+}
