@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculo.js"></script>
+    <title>Calculadora de Despesas</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Despesas</h1>
+    </header>
+
+    <main>
+        <label for="gasto">
+            <p id="igasto">Insira os gasto aqui</p>
+            <div id="alinharmain">
+                <input type="number" name="gasto" id="gasto">
+                <input type="button" value="calcular" name="calcular" id="btn_calcular" onclick="calcular()">
+            </div>
+
+        </label>
+            <div class="decisao">
+                    <p id="textofinal">O ano é bissexto?</p>
+                    <div id="alinhar">
+                        <label for="sim" class="labeldecisao">
+                            <input type="radio" name="bissexto" id="sim" class="inputdecisao">Sim
+                        </label>
+                        <label for="nao" class="labeldecisao">
+                            <input type="radio" name="bissexto" id="nao" class="inputdecisao">Não
+                        </label>
+                        <label for="diautil">
+                            <input type="checkbox" name="bissexto" id="diautil" class="inputdecisao">Apenas dia util
+                        </label>
+                    </div>
+            </div>
+        <p class="final">Você gasta por semana
+            <div id="resemana" class="resfinal"></div>
+        </p>
+        <p class="final">Você gasta por mês
+            <div id="resmes" class="resfinal"></div>
+        </p>
+        <p class="final">Você gasta por ano 
+            <div id="resano" class="resfinal"></div>
+        </p>
+    </main>
+</body>
+</html>
